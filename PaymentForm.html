@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Charity Foundation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+		
+	</head>
+	<body>
+
+		<!-- Header -->
+        <header id="header">
+			<h1><strong><a href="index.html">Charity Foundation</a></strong></h1>
+			<nav class="nav-div">
+			
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<div class="Menu-btn">
+						<img src="assets/Menu.png" style="height: 20px;">
+					</div>
+				</a>
+				   
+				<ul class="main-nav" id="mymain-nav">
+				   
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<div class="Cross-btn" id="myCross-btn">
+					   
+						<img src="assets/Cross.png" style="height: 20px;">
+					</div>
+					</a>
+					<li>
+						<a href="PaymentForm.html"  class="nav-links">Donate Now</a>
+					</li>
+					
+					<li>
+						<a href="contactus.html" class="nav-links">Contact Us</a>
+					</li>
+				</ul>
+			 </nav>
+		</header>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="container">
+					<header class="major special" style="margin: 0 0 2em 0;">
+						<h2>We Believe in Good Work</h2>
+						<p style="font-size: 15px; line-height: 2em; color: #666; text-transform: none;">Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+					</header>
+						<section>
+							<h3>Fill this form</h3>
+							<form >
+								<div class="row uniform 50%">
+                                    
+                                    <div class="6u$">
+										<input type="text" name="name" id="name" value="" placeholder="Name" />
+									</div>
+									<div class="6u$">
+										<input type="email" name="email" id="email" value="" placeholder="Email" />
+                                    </div>
+                                    <div class="4u$">
+										<input type="number" name="Amt" id="amount" value="" placeholder="Amount" />
+									</div>
+									
+									<div class="6u$ 12u$(small)">
+										<ul class="actions">
+											<li><input id="rzp-button1" type="submit" value="Donate Now" class="special" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+
+
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-facebook"></a></li>
+						<li><a href="#" class="icon fa-twitter"></a></li>
+						<li><a href="#" class="icon fa-instagram"></a></li>
+					</ul>
+					<ul class="copyright">
+						
+						<li>Designed by <a href="#">Akashdeep Roy Karmakar</a></li>
+						
+					</ul>
+				</div>
+			</footer>
+			<script src="payment.js"></script>
+			<script>
+				function myFunction() {
+				  var x = document.getElementById("mymain-nav");
+				  var y = document.getElementById("myCross-btn");
+				  if (x.className === "main-nav") {
+					x.className += " show";
+					y.className +=" show"
+				  } else {
+					x.className = "main-nav";
+				  }
+				}
+				</script>
+	</body>
+</html>

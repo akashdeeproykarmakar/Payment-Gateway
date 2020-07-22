@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Charity Foundation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <style >
+            @media screen and (max-width:736px ) {
+                
+                #main{
+                    padding:3.5em 0 14em 0;
+                }
+    }
+        </style>
+	</head>
+	<body >
+
+		<!-- Header -->
+		<header id="header">
+			<h1><strong><a href="index.html">Charity Foundation</a></strong></h1>
+			<nav class="nav-div">
+			
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<div class="Menu-btn">
+						<img src="assets/Menu.png" style="height: 20px;">
+					</div>
+				</a>
+				   
+				<ul class="main-nav" id="mymain-nav">
+				   
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<div class="Cross-btn" id="myCross-btn">
+					   
+						<img src="assets/Cross.png" style="height: 20px;">
+					</div>
+					</a>
+					<li>
+						<a href="PaymentForm.html"  class="nav-links">Donate Now</a>
+					</li>
+					
+					<li>
+						<a href="contactus.html" class="nav-links">Contact Us</a>
+					</li>
+				</ul>
+			 </nav>
+		</header>
+		<!-- Main -->
+			<section id="main" class="wrapper" ">
+				<div class="container" style="line-height: normal;">
+
+					<header class="major special" style="margin: 0 0 0 0 ;">
+						<h2>Contact Us</h2>
+						
+					</header>
+
+					<p style=" margin: 0 0 1em 0;"><b>Address</b></p>
+					<p style=" margin: 0 0 0.5em 0;">42, mile, Loren Ipsum,
+					<p style=" margin: 0 0 0.5em 0;">Ves Taurasus,
+					<p style=" margin: 0 0 0.5em 0;">Babpos Lisne,
+                    <p style=" margin: 0 0 0.5em 0;">Tura - 10010</p>
+                        <br>
+                    <p style=" margin: 0 0 1em 0;"><b>Contact </b></p>
+                    <p style=" margin: 0 0 2em 0;">7895643315, 5879521583</p>
+
+
+				</div>
+			</section>
+		<!-- Footer -->
+			<footer id="footer" >
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-facebook"></a></li>
+						<li><a href="#" class="icon fa-twitter"></a></li>
+						<li><a href="#" class="icon fa-instagram"></a></li>
+					</ul>
+					<ul class="copyright">
+						
+						<li>Designed by <a href="#">Akashdeep Roy Karmakar</a></li>
+						
+					</ul>
+				</div>
+			</footer>
+			<script>
+				function myFunction() {
+				  var x = document.getElementById("mymain-nav");
+				  var y = document.getElementById("myCross-btn");
+				  if (x.className === "main-nav") {
+					x.className += " show";
+					y.className +=" show"
+				  } else {
+					x.className = "main-nav";
+				  }
+				}
+				</script>
+		</body>
+</html>
